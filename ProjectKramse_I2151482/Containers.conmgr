@@ -7,11 +7,12 @@
     <DTS:ConnectionManager
       DTS:Format="Delimited"
       DTS:LocaleID="2057"
+      DTS:Unicode="True"
       DTS:HeaderRowDelimiter="_x000D__x000A_"
       DTS:ColumnNamesInFirstDataRow="True"
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
-      DTS:CodePage="1252"
+      DTS:CodePage="65001"
       DTS:ConnectionString="C:\Users\Coen-PC\source\repos\I2151482_ProjectKramse\Kramse\ProjectKramse_I2151482\Source files\Container v2.txt">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
@@ -21,7 +22,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Id"
-          DTS:DTSID="{63F6F0CF-5E97-479D-BB8D-E0B91ABCCBDC}"
+          DTS:DTSID="{95FA5345-3E37-4063-83D9-1D991888ADF5}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +31,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Type"
-          DTS:DTSID="{C0461AD5-0862-4F47-8DA5-4E695F49418A}"
+          DTS:DTSID="{CAB29B7F-4865-4BAD-896E-E9B6C2DDD9E7}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +40,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="RefrigerationFlag"
-          DTS:DTSID="{3EBA00DE-0548-4BAF-8006-DDEBD787E20E}"
+          DTS:DTSID="{8312A7B3-0507-4AC1-B498-AFD521B9D8F6}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +49,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="PowerFlag"
-          DTS:DTSID="{E094AC9C-1E8B-4156-BFA2-35EEA6C9071C}"
+          DTS:DTSID="{D7053115-E942-4019-8FC6-F95A86159BA8}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +58,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Length"
-          DTS:DTSID="{C8EE4E33-46B5-4336-9314-AF78325B9100}"
+          DTS:DTSID="{E755EC3D-8A45-403B-88C1-602A78E25372}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -66,7 +67,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Cubes"
-          DTS:DTSID="{61635F60-9F0D-4288-B308-C835B50C5CF5}"
+          DTS:DTSID="{7E397016-D39B-4E1F-BEAB-78CF9B7FEC4D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -75,7 +76,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="EuroPricePerKm"
-          DTS:DTSID="{30789BBF-FE72-43E7-988C-19008449DCD9}"
+          DTS:DTSID="{762C6A4C-8ABF-4B0F-B2E4-85E3D93C3505}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

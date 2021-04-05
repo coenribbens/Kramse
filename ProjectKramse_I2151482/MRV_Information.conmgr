@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Excel Connection Manager"
+  DTS:ObjectName="MRV_Information"
   DTS:DTSID="{8807E36E-A911-4C97-8872-CEF8D08D7FB1}"
   DTS:CreationName="EXCEL">
   <DTS:ObjectData>
