@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">C-RIBBENS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIYiiBMpcR0mVXCKJ6t449AAAAAACAAAAAAAQZgAAAAEAACAAAADEJqXDxvLvV86korVEqtwoWTkHLqLfARzzxZA8DVLL9gAAAAAOgAAAAAIAACAAAAAfuYZtTm6N0MlwW5YJwtMk04urlIXBcGyukM5amjeC8ZAAAAC9zGhkd98kkhdUC2zUhg+ZsdQhDLWocZNrth01kmGyp45VP/cm09TeDOI3CBTaL56uEQmUfkXv3AkIKJiB1TR8wgmIc4oGFZjg8FGki3qeXbXdED5E4As188G49bIZUpdVHkkRT7cgBz8i0nciemJ+3KQVopZDmrr1ajr/vuDeoKQcvGoSibHCx2jTK1QUkP1AAAAAmaopRep9P4wx2fwNIKeQeioq0GaR3gPYdG/sGKKf2TAuUG85bZErNXElu3OtikhZOwL6Wmlf19iIYM1MCnbesg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIYiiBMpcR0mVXCKJ6t449AAAAAACAAAAAAAQZgAAAAEAACAAAACvFCufxgjgx4xsrWjIgTwfE7a8lTZ8w/XjYZ4c/xEbRgAAAAAOgAAAAAIAACAAAADC4rS9q3AlRPithZ/fGiC3IvnbWbSyzTd4oxjTc4+wl5AAAAD8dKH5LWnLRBxURNtxH1syWjJATFLYirzrHCvHweYQ3H3IdrvA3ZaHZAGu4SKKa6tBqoLs5+i/jvU2o+jiEJD90MaU8EdGiKfTYkD1wOaTibWi2Ymh0U3hp//B6Nq2hSjUcmUNaMb5wRS8XqLmGGw8HYJHvNHixf9z6Xah8sAIck17T6GR3os6YzTL/KkwRjZAAAAAYp2AhXtcb0vbkGX//VpPnW3hSZcQURUw2x9AIHd3L9Q4iOKm9mMGf58GF1+UYcM4J8NQcUyt9SF8VjKrip8s/Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -324,7 +324,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">65001</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">1252</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -990,10 +990,10 @@
                 <SSIS:Property SSIS:Name="Name">1  Files to staging Area</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">34</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">48</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9CD65CCC-7EA2-414B-A976-7D25231BB7B1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5F498295-206A-44BA-927D-8C26A288293D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1024,10 +1024,10 @@
                 <SSIS:Property SSIS:Name="Name">2  Staging Area to PSA</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">48</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E6B2E5D1-3C07-4737-9F17-85ECF0742F37}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{51836103-1FD3-4B8D-9E38-7E65AF2C691F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

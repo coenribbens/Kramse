@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="1  Files to staging Area"
   DTS:PackageType="5"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{9CD65CCC-7EA2-414B-A976-7D25231BB7B1}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{5F498295-206A-44BA-927D-8C26A288293D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -3201,252 +3201,6 @@
           version="1">
           <components>
             <component
-              refId="Package\Load Containers\Data Conversion"
-              componentClassID="Microsoft.DataConvert"
-              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Data Conversion"
-              name="Data Conversion"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input]"
-                  name="Data Conversion Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[Type]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Type"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Type]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[RefrigerationFlag]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="RefrigerationFlag"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[RefrigerationFlag]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[PowerFlag]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="PowerFlag"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[PowerFlag]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[Length]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Length"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Length]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[Id]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Id"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Id]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[EuroPricePerKm]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="EuroPricePerKm"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[EuroPricePerKm]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input].Columns[Cubes]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Cubes"
-                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Cubes]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output]"
-                  exclusionGroup="1"
-                  name="Data Conversion Output"
-                  synchronousInputId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Type]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Type]"
-                      name="Type"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Type]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[RefrigerationFlag]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[RefrigerationFlag]"
-                      name="RefrigerationFlag"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[RefrigerationFlag]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[PowerFlag]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[PowerFlag]"
-                      name="PowerFlag"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[PowerFlag]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Length]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Length]"
-                      name="Length"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Length]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Id]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Id]"
-                      name="Id"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Id]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[EuroPricePerKm]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[EuroPricePerKm]"
-                      name="EuroPricePerKm"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[EuroPricePerKm]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Cubes]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Cubes]"
-                      name="Cubes"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Cubes]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Data Conversion Error Output"
-                  synchronousInputId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Load Containers\Load Container from Flat File"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -3479,14 +3233,13 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Id]"
-                      codePage="65001"
-                      dataType="str"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Id]"
-                      length="50"
                       lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Id]"
                       name="Id"
+                      precision="18"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3501,7 +3254,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Type]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3523,7 +3276,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[RefrigerationFlag]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3545,7 +3298,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[PowerFlag]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3567,12 +3320,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Length]"
-                      codePage="65001"
-                      dataType="str"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Length]"
-                      length="50"
                       lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Length]"
                       name="Length"
                       truncationRowDisposition="FailComponent">
@@ -3589,12 +3340,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Cubes]"
-                      codePage="65001"
-                      dataType="str"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Cubes]"
-                      length="50"
                       lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Cubes]"
                       name="Cubes"
                       truncationRowDisposition="FailComponent">
@@ -3611,7 +3360,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[EuroPricePerKm]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3636,43 +3385,38 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Id]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Id" />
+                      dataType="numeric"
+                      name="Id"
+                      precision="18" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Type]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="Type" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[RefrigerationFlag]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="RefrigerationFlag" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[PowerFlag]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="PowerFlag" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Length]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
+                      dataType="r8"
                       name="Length" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[Cubes]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
+                      dataType="r8"
                       name="Cubes" />
                     <externalMetadataColumn
                       refId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].ExternalColumns[EuroPricePerKm]"
-                      codePage="65001"
+                      codePage="1252"
                       dataType="str"
                       length="50"
                       name="EuroPricePerKm" />
@@ -3714,6 +3458,7 @@
               description="OLE DB Destination"
               name="Load into Container table"
               usesDispositions="true"
+              validateExternalMetadata="False"
               version="4">
               <properties>
                 <property
@@ -3781,53 +3526,55 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[EuroPricePerKm]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="EuroPricePerKm"
                       externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[EuroPricePerKm]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[EuroPricePerKm]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Cubes]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Cubes"
-                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Cubes]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Cubes]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Length]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Length"
-                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Length]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[PowerFlag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="PowerFlag"
-                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[PowerFlag]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[PowerFlag]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[RefrigerationFlag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="RefrigerationFlag"
-                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[RefrigerationFlag]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[RefrigerationFlag]" />
-                    <inputColumn
-                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Type]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="Type"
-                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Type]" />
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[EuroPricePerKm]" />
                     <inputColumn
                       refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Id]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
+                      cachedDataType="numeric"
                       cachedName="Id"
+                      cachedPrecision="18"
                       externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
-                      lineageId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output].Columns[Id]" />
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Type"
+                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Type]" />
+                    <inputColumn
+                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[RefrigerationFlag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="RefrigerationFlag"
+                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[RefrigerationFlag]"
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[RefrigerationFlag]" />
+                    <inputColumn
+                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[PowerFlag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PowerFlag"
+                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[PowerFlag]"
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[PowerFlag]" />
+                    <inputColumn
+                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Length]"
+                      cachedDataType="r8"
+                      cachedName="Length"
+                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Length]"
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Length]" />
+                    <inputColumn
+                      refId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].Columns[Cubes]"
+                      cachedDataType="r8"
+                      cachedName="Cubes"
+                      externalMetadataColumnId="Package\Load Containers\Load into Container table.Inputs[OLE DB Destination Input].ExternalColumns[Cubes]"
+                      lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Cubes]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3916,21 +3663,21 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Load Containers\Remove all empty rows.Inputs[Conditional Split Input].Columns[Type]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Type"
                       lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[Type]" />
                     <inputColumn
                       refId="Package\Load Containers\Remove all empty rows.Inputs[Conditional Split Input].Columns[RefrigerationFlag]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="RefrigerationFlag"
                       lineageId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output].Columns[RefrigerationFlag]" />
                     <inputColumn
                       refId="Package\Load Containers\Remove all empty rows.Inputs[Conditional Split Input].Columns[PowerFlag]"
-                      cachedCodepage="65001"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="PowerFlag"
@@ -4014,13 +3761,8 @@
               name="Conditional Split Default Output"
               startId="Package\Load Containers\Remove all empty rows.Outputs[Conditional Split Default Output]" />
             <path
-              refId="Package\Load Containers.Paths[Data Conversion Output]"
-              endId="Package\Load Containers\Remove all empty rows.Inputs[Conditional Split Input]"
-              name="Data Conversion Output"
-              startId="Package\Load Containers\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
               refId="Package\Load Containers.Paths[Flat File Source Output]"
-              endId="Package\Load Containers\Data Conversion.Inputs[Data Conversion Input]"
+              endId="Package\Load Containers\Remove all empty rows.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Load Containers\Load Container from Flat File.Outputs[Flat File Source Output]" />
           </paths>
@@ -4205,7 +3947,7 @@
     design-time-name="Package\Load Access Database">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="141,42"
           Id="Package\Load Access Database\SA_Shipment"
@@ -4285,7 +4027,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4307,7 +4051,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4329,7 +4075,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4351,7 +4099,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4373,7 +4123,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4395,7 +4147,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4417,7 +4171,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4439,7 +4195,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4449,7 +4207,7 @@
     design-time-name="Package\Load Consignor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="293,42"
           Id="Package\Load Consignor\Replace all NULL ocurrences for 0 in Discount"
@@ -4481,7 +4239,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4503,7 +4263,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4517,55 +4279,29 @@
         <NodeLayout
           Size="198,42"
           Id="Package\Load Containers\Load into Container table"
-          TopLeft="305,441" />
+          TopLeft="242,289" />
         <NodeLayout
           Size="215,42"
           Id="Package\Load Containers\Load Container from Flat File"
-          TopLeft="299,115" />
+          TopLeft="234,65" />
         <NodeLayout
           Size="189,42"
           Id="Package\Load Containers\Remove all empty rows"
-          TopLeft="306,332" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load Containers\Data Conversion"
-          TopLeft="326,225" />
+          TopLeft="241,169" />
         <EdgeLayout
           Id="Package\Load Containers.Paths[Flat File Source Output]"
-          TopLeft="405.25,157">
+          TopLeft="338.5,107">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68"
+              EndConnector="0,62"
               Start="0,0"
-              End="0,60.5">
+              End="0,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Containers.Paths[Data Conversion Output]"
-          TopLeft="402.25,267">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65"
-              Start="0,0"
-              End="0,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.5" />
+                    End="0,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4576,25 +4312,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Containers.Paths[Conditional Split Default Output]"
-          TopLeft="402.25,374">
+          TopLeft="338.25,211">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="0,78"
               Start="0,0"
-              End="0,59.5">
+              End="0,70.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="0,70.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-70.61390625,23.9208984375,141.2278125,11.658203125"
+              BoundingBox="-70.61390625,29.4208984375,141.2278125,11.658203125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

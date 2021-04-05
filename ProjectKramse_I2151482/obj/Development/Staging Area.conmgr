@@ -8,7 +8,7 @@
       DTS:ConnectionString="Data Source=aei-sql2.avans.nl\Studenten,1443;User ID=I2151482;Initial Catalog=I2151482_Project1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIYiiBMpcR0mVXCKJ6t449AAAAAACAAAAAAAQZgAAAAEAACAAAAA7Ey0z4w1HU0KfPxqTORxepw6bfnO6+rKJR51pDr5ibgAAAAAOgAAAAAIAACAAAACJpVxYjXpNssLPbNeL0e985l8+hBp85j/jWDOik8YFA4AAAABYl+ZUvw4MAFwcraMDygYbuazEGXxNQ+0A7O6kFQMUgl86num34/o7LLU0RJZo4j6PsARoSNq8vk41lBGIxeRDxNOGjb+RKf6xzdHiRK/39ewtu5On1iNlfpae1AIIZIlU3cEEq1gItMA0GKdOPhYQwRk0KUi4GpMgtS2brPwKFkAAAACGELFgfFc49iblil54CEh5Uk+CAiJLXB0nP61orQfycAqVK/gcZ3jpo0JHWjj62qGlHlZqMFLy+b7l9MnBaKNW</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIYiiBMpcR0mVXCKJ6t449AAAAAACAAAAAAAQZgAAAAEAACAAAADHt6vvGKDMq+0sONdU0Er0uf3OIVMfv7z1b78Zm951UwAAAAAOgAAAAAIAACAAAAD2Iq3bNh7xsYYgRnQvcuS6hPkas5bE9neet/lovC6LkIAAAADLsp5jBUmNhxK7G/Tdj31rYvx64MW8FvzAKo8ozE11qxmjNUgAx52Kgr5k9kwzEDUMziphqFtDCtmPP9/7GVm0qzfY3t3ISCp/rhQED1pK5TGpUL50cGP/oQbY/GgK/JltavK6ZEc01Xah0hToM3JB4v7ae5M+E2EjHgnrePOlRUAAAAC1i7gBRF8RRCCuo+qeNghYOzmpx/lwFiL2gejkY9SmvqudqtIpzC0kK1RDbk6MGLSdckg0CzQbUu3Z1iauh4Uk</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

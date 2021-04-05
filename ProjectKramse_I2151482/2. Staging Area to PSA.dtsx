@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="2  Staging Area to PSA"
   DTS:PackageType="5"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{F159749D-61F4-4233-A061-1E3A38F96EB5}">
+  DTS:VersionBuild="52"
+  DTS:VersionGUID="{A1FC8E24-E93A-4936-894F-2AEC9D6FE082}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1597,6 +1597,12 @@
                       cachedName="EXTRACTION_DATE"
                       externalMetadataColumnId="Package\Transfer children to PSA\Transfer data to PSA Consignor.Inputs[OLE DB Destination Input].ExternalColumns[EXTRACTION_DATE]"
                       lineageId="Package\Transfer children to PSA\Add transfer date to Consignor table.Outputs[Derived Column Output].Columns[EXTRACTION_DATE]" />
+                    <inputColumn
+                      refId="Package\Transfer children to PSA\Transfer data to PSA Consignor.Inputs[OLE DB Destination Input].Columns[Id]"
+                      cachedDataType="r8"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Transfer children to PSA\Transfer data to PSA Consignor.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\Transfer children to PSA\Load data to Consignor - Staging.Outputs[OLE DB Source Output].Columns[Id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1764,7 +1770,8 @@
                       cachedLength="50"
                       cachedName="Id"
                       externalMetadataColumnId="Package\Transfer children to PSA\Transfer data to PSA Container.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
-                      lineageId="Package\Transfer children to PSA\Load data from Container - Staging.Outputs[OLE DB Source Output].Columns[Id]" />
+                      lineageId="Package\Transfer children to PSA\Load data from Container - Staging.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id" />
                     <inputColumn
                       refId="Package\Transfer children to PSA\Transfer data to PSA Container.Inputs[OLE DB Destination Input].Columns[Type]"
                       cachedCodepage="1252"
@@ -1798,17 +1805,20 @@
                       name="EXTRACTION_DATE" />
                     <externalMetadataColumn
                       refId="Package\Transfer children to PSA\Transfer data to PSA Container.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="Type" />
                     <externalMetadataColumn
                       refId="Package\Transfer children to PSA\Transfer data to PSA Container.Inputs[OLE DB Destination Input].ExternalColumns[RefrigerationFlag]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="RefrigerationFlag" />
                     <externalMetadataColumn
                       refId="Package\Transfer children to PSA\Transfer data to PSA Container.Inputs[OLE DB Destination Input].ExternalColumns[PowerFlag]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="PowerFlag" />
                     <externalMetadataColumn
@@ -6044,17 +6054,37 @@ where [refTable].[Id] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="233,45"
-          Id="Package\Transfer children to PSA\Transfer data to PSA Item"
-          TopLeft="583,261" />
+          Size="247,44"
+          Id="Package\Transfer children to PSA\Transfer data to PSA Consignor"
+          TopLeft="43,287" />
+        <NodeLayout
+          Size="252,42"
+          Id="Package\Transfer children to PSA\Add transfer date to Port table"
+          TopLeft="1097,165" />
         <NodeLayout
           Size="244,42"
           Id="Package\Transfer children to PSA\Transfer data to PSA Port"
           TopLeft="1100,264" />
         <NodeLayout
-          Size="252,42"
-          Id="Package\Transfer children to PSA\Add transfer date to Port table"
-          TopLeft="1097,165" />
+          Size="241,42"
+          Id="Package\Transfer children to PSA\Transfer data to PSA Container"
+          TopLeft="312,266" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Transfer children to PSA\Add transfer date to Item table"
+          TopLeft="587,165" />
+        <NodeLayout
+          Size="233,45"
+          Id="Package\Transfer children to PSA\Transfer data to PSA Item"
+          TopLeft="583,261" />
+        <NodeLayout
+          Size="231,42"
+          Id="Package\Transfer children to PSA\Transfer data to PSA Ship"
+          TopLeft="842,261" />
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Transfer children to PSA\Add transfer date to Container table"
+          TopLeft="310,160" />
         <NodeLayout
           Size="245,42"
           Id="Package\Transfer children to PSA\Load data from Container - Staging"
@@ -6068,33 +6098,9 @@ where [refTable].[Id] = ?</property>
           Id="Package\Transfer children to PSA\Load data from Port - Staging"
           TopLeft="1101,67" />
         <NodeLayout
-          Size="231,42"
-          Id="Package\Transfer children to PSA\Transfer data to PSA Ship"
-          TopLeft="842,261" />
-        <NodeLayout
-          Size="226,42"
-          Id="Package\Transfer children to PSA\Add transfer date to Item table"
-          TopLeft="587,165" />
-        <NodeLayout
           Size="220,42"
           Id="Package\Transfer children to PSA\Load data from Ship - Staging"
           TopLeft="843,65" />
-        <NodeLayout
-          Size="234,42"
-          Id="Package\Transfer children to PSA\Load data to Consignor - Staging"
-          TopLeft="40,62" />
-        <NodeLayout
-          Size="242,51"
-          Id="Package\Transfer children to PSA\Transfer data to PSA Container"
-          TopLeft="315,290" />
-        <NodeLayout
-          Size="247,44"
-          Id="Package\Transfer children to PSA\Transfer data to PSA Consignor"
-          TopLeft="43,287" />
-        <NodeLayout
-          Size="249,42"
-          Id="Package\Transfer children to PSA\Add transfer date to Container table"
-          TopLeft="310,160" />
         <NodeLayout
           Size="250,42"
           Id="Package\Transfer children to PSA\Add transfer date to Consignor table"
@@ -6103,6 +6109,54 @@ where [refTable].[Id] = ?</property>
           Size="246,42"
           Id="Package\Transfer children to PSA\Add transfer date to Ship table"
           TopLeft="838,164" />
+        <NodeLayout
+          Size="234,42"
+          Id="Package\Transfer children to PSA\Load data to Consignor - Staging"
+          TopLeft="40,62" />
+        <EdgeLayout
+          Id="Package\Transfer children to PSA.Paths[Derived Column Output2]"
+          TopLeft="699.75,207">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transfer children to PSA.Paths[Derived Column Output1]"
+          TopLeft="1222.5,207">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Transfer children to PSA.Paths[Derived Column Output]"
           TopLeft="959.25,206">
@@ -6260,41 +6314,19 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Transfer children to PSA.Paths[Derived Column Output1]"
-          TopLeft="1222.5,207">
+          Id="Package\Transfer children to PSA.Paths[Derived Column Output4]"
+          TopLeft="433.5,202">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,57"
+              EndConnector="0,64"
               Start="0,0"
-              End="0,49.5">
+              End="0,56.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Transfer children to PSA.Paths[Derived Column Output2]"
-          TopLeft="699.75,207">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
+                    End="0,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6325,31 +6357,48 @@ where [refTable].[Id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Transfer children to PSA.Paths[Derived Column Output4]"
-          TopLeft="435.25,202">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,88"
-              Start="0,0"
-              End="0,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Consignor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Port">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Container">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Transfer children to PSA\Transfer data to PSA Item">
     <Properties>
@@ -6364,7 +6413,7 @@ where [refTable].[Id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Port">
+    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Ship">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6416,19 +6465,6 @@ where [refTable].[Id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Ship">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Transfer children to PSA\Load data from Ship - Staging">
     <Properties>
       <Property>
@@ -6443,32 +6479,6 @@ where [refTable].[Id] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Transfer children to PSA\Load data to Consignor - Staging">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Container">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transfer children to PSA\Transfer data to PSA Consignor">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6669,7 +6679,9 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6715,7 +6727,9 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6737,7 +6751,9 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
